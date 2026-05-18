@@ -67,11 +67,7 @@ const CartItem = ({ onContinueShopping }) => {
       <div>
         {cart.map((item) => (
           <div className="cart-item" key={item.name}>
-            <img
-              className="cart-item-image"
-              src={item.image}
-              alt={item.name}
-            />
+            <img className="cart-item-image" src={item.image} alt={item.name} />
 
             <div className="cart-item-details">
               <div className="cart-item-name">{item.name}</div>
@@ -85,9 +81,7 @@ const CartItem = ({ onContinueShopping }) => {
                   -
                 </button>
 
-                <span className="cart-item-quantity-value">
-                  {item.quantity}
-                </span>
+                <span className="cart-item-quantity-value">{item.quantity}</span>
 
                 <button
                   className="cart-item-button cart-item-button-inc"
